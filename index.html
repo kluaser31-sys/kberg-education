@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kberg Education — Formation, orientation et avenir professionnel</title>
+<meta name="description" content="Développez des compétences utiles, découvrez des opportunités et construisez votre avenir avec Kberg Education.">
+<meta property="og:title" content="Kberg Education — Votre avenir mérite de meilleures clés">
+<meta property="og:description" content="Formation, orientation et ressources pratiques pour avancer avec plus de clarté.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f7f4;--card:#fff;--ink:#10261f;--mute:#506059;--line:#d9e2dc;--main:#14574a;--on:#fff;--acc:#e3a72b;--soft:#e6efe9;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1914;--card:#12261f;--ink:#eaf3ee;--mute:#9db3a9;--line:#24402f;--main:#3fb594;--on:#06231b;--soft:#16302a}}
+:root[data-theme="dark"]{--bg:#0b1914;--card:#12261f;--ink:#eaf3ee;--mute:#9db3a9;--line:#24402f;--main:#3fb594;--on:#06231b;--soft:#16302a}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(2.6rem,8vw,5.2rem);font-weight:700}
+h2{font-size:clamp(1.9rem,4.6vw,3.1rem);font-weight:700}
+h3{font-size:1.25rem;font-weight:500}
+em{font-style:italic;color:var(--main)}
+a{color:inherit;text-decoration:none}
+p{margin:0}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:84px 0}
+.lead{color:var(--mute);max-width:56ch;margin-top:16px}
+.tag{font-weight:600;color:var(--main);font-size:.95rem;margin-bottom:12px}
+.btn{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:600;border:2px solid var(--main);background:var(--main);color:var(--on);cursor:pointer;font:600 1rem Figtree,sans-serif;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.o{background:transparent;color:var(--main)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font:700 1.25rem Fraunces,serif}
+.logo i{width:34px;height:34px;border-radius:10px;background:var(--main);color:var(--on);display:grid;place-items:center;font-style:normal}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:500}
+nav a:hover{color:var(--main)}
+.nav .btn{padding:9px 18px;font-size:.9rem}
+.bg{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:10px;width:42px;height:42px;font-size:1.2rem;cursor:pointer}
+@media(max-width:860px){.bg{display:block}.nav .btn{display:none}nav ul{display:none;position:absolute;left:0;right:0;top:68px;flex-direction:column;background:var(--bg);padding:18px 20px;border-bottom:1px solid var(--line)}nav ul.open{display:flex}}
+.hero{padding:70px 0 40px}
+.hero p{margin:22px 0 30px;max-width:54ch;color:var(--mute);font-size:1.15rem}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.ticker{overflow:hidden;border-block:1px solid var(--line);margin-top:56px;padding:14px 0;white-space:nowrap}
+.ticker div{display:inline-block;animation:slide 28s linear infinite;font-weight:600;color:var(--mute)}
+.ticker span{margin:0 26px}
+.ticker span:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--acc);margin-right:26px}
+@keyframes slide{to{transform:translateX(-50%)}}
+.stats{display:flex;flex-wrap:wrap;gap:40px;margin-top:34px}
+.stats b{display:block;font:700 clamp(2.6rem,7vw,4.4rem)/1 Fraunces,serif;color:var(--main)}
+.stats small{color:var(--mute)}
+.promise{background:var(--main);color:var(--on)}
+.promise em,.promise .tag{color:var(--acc)}
+.promise p{color:inherit;opacity:.88}
+.steps{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.steps span{border:1.5px solid currentColor;border-radius:999px;padding:8px 18px;font-weight:600}
+.grid{display:grid;gap:18px;margin-top:40px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;transition:border-color .2s}
+a.card:hover{border-color:var(--main)}
+.card p{color:var(--mute);margin-top:8px;font-size:.98rem}
+.n{font:500 1.6rem Fraunces,serif;color:var(--acc);display:block;margin-bottom:10px}
+.res{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.cover{aspect-ratio:4/3;display:flex;align-items:flex-end;padding:20px;background:var(--g);color:#fff;font:700 1.35rem/1.1 Fraunces,serif;position:relative}
+.cover:after{content:"";position:absolute;left:14px;top:0;bottom:0;width:3px;background:rgba(255,255,255,.35)}
+.cover small{position:absolute;top:14px;right:14px;background:var(--acc);color:#10261f;font:600 .75rem Figtree,sans-serif;padding:4px 10px;border-radius:99px}
+.res>div:last-child{padding:20px 22px 24px;display:flex;flex-direction:column;gap:6px;flex:1}
+.res .btn{margin-top:auto;align-self:flex-start;padding:9px 18px;font-size:.9rem}
+.split{display:grid;gap:40px;align-items:center;grid-template-columns:1.1fr .9fr}
+@media(max-width:800px){.split{grid-template-columns:1fr}}
+.duo{position:relative;height:340px}
+.duo .cover{position:absolute;width:52%;aspect-ratio:3/4;border-radius:10px;box-shadow:0 20px 40px rgba(0,0,0,.25);font-size:1.05rem}
+.duo .cover:first-child{left:6%;top:6%;transform:rotate(-6deg)}
+.duo .cover:last-child{right:6%;top:0;transform:rotate(5deg)}
+.lines>div{display:grid;grid-template-columns:48px 1fr;gap:6px 16px;padding:22px 0;border-top:1px solid var(--line)}
+.lines>div:last-child{border-bottom:1px solid var(--line)}
+.lines p{grid-column:2;color:var(--mute);margin-top:-8px}
+.mq{overflow:hidden;margin-top:14px;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mq>div{display:flex;gap:16px;width:max-content;animation:slide 60s linear infinite}
+.mq.r>div{animation-direction:reverse}
+.mq:hover>div{animation-play-state:paused}
+.t{width:320px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;white-space:normal}
+.t header{all:unset;display:flex;align-items:center;gap:12px;margin-bottom:12px;font-weight:600}
+.av{width:40px;height:40px;border-radius:50%;background:var(--soft);color:var(--main);display:grid;place-items:center;font-weight:700;font-size:.85rem}
+.t small{display:block;color:var(--mute);margin-top:10px;font-size:.8rem}
+.note{font-size:.9rem;color:var(--mute);margin-top:14px}
+.srch{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0 10px}
+.srch input{flex:1 1 260px;padding:14px 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
+.pill{padding:10px 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:500 .95rem Figtree,sans-serif;cursor:pointer}
+.pill.on{background:var(--main);color:var(--on);border-color:var(--main)}
+.sup img,.sup .ph{width:100%;aspect-ratio:4/3;border-radius:22px;background:linear-gradient(135deg,var(--main),#0b3a31);display:grid;place-items:center;color:var(--on);font:500 1.1rem Fraunces,serif;text-align:center;padding:20px}
+details{border-top:1px solid var(--line);padding:20px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font:500 1.2rem Fraunces,serif;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary:after{content:"+";color:var(--main);font-size:1.5rem;line-height:1;transition:transform .25s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{margin-top:12px;color:var(--mute);max-width:62ch}
+.cta{text-align:center;background:var(--soft)}
+.cta .row{justify-content:center;margin-top:30px}
+.cta p{margin-top:16px;color:var(--mute)}
+footer{padding:50px 0 30px;border-top:1px solid var(--line)}
+footer .w{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between}
+footer ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px 22px;color:var(--mute)}
+footer small{display:block;width:100%;color:var(--mute)}
+.lib{display:none;padding-top:50px}
+body.islib .lib{display:block}body.islib #home{display:none}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:54px;height:54px;border-radius:50%;background:#25a85a;color:#fff;display:grid;place-items:center;font-size:1.6rem;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="w nav">
+<a class="logo" href="#accueil" aria-label="Kberg Education, accueil"><i>K</i>Kberg Education</a>
+<nav aria-label="Navigation principale"><ul id="menu">
+<li><a href="#accueil">Accueil</a></li><li><a href="#formations">Formations</a></li><li><a href="#/bibliotheque">Ressources</a></li><li><a href="#support">Support</a></li></ul></nav>
+<a class="btn" href="#/bibliotheque">Découvrir nos ressources</a>
+<button class="bg" id="bg" aria-label="Ouvrir le menu">☰</button>
+</div></header>
+
+<main id="home">
+<section class="hero" id="accueil"><div class="w">
+<p class="tag" style="margin:0 0 14px">Bienvenue sur Kberg Education</p>
+<h1>Votre avenir mérite de meilleures <em>clés.</em></h1>
+<p>Formez-vous, découvrez de nouvelles possibilités et développez les compétences qui peuvent réellement changer la suite de votre parcours.</p>
+<div class="row"><a class="btn" href="#/bibliotheque">Découvrir nos ressources et formations</a><a class="btn o" href="#promesse">Découvrir Kberg Education</a></div>
+<div class="ticker" aria-hidden="true"><div id="tk"></div></div>
+<div class="stats" id="stats">
+<div><b data-to="LEARNERS">0</b><small>Apprenants</small></div>
+<div><b data-to="REVIEWS" data-of="TOTAL">0</b><small>Avis positifs</small></div></div>
+</div></section>
+
+<section class="promise" id="promesse"><div class="w">
+<p class="tag">Notre promesse</p>
+<h2>Apprendre est une première étape. <em>Savoir où aller</em> change tout.</h2>
+<p class="lead">Kberg Education rassemble formation, orientation et ressources pratiques pour aider chacun à avancer avec plus de clarté, de compétences et de possibilités.</p>
+<div class="steps"><span>Apprendre</span><span>Comprendre</span><span>Appliquer</span><span>Progresser</span></div>
+</div></section>
+
+<section><div class="w">
+<p class="tag">Votre trajectoire</p>
+<h2>Quelle est votre <em>prochaine étape ?</em></h2>
+<p class="lead">Choisissez ce qui vous ressemble aujourd'hui. Votre direction peut évoluer demain.</p>
+<div class="grid">
+<a class="card" href="#/bibliotheque"><span class="n">1</span><h3>Développer mes compétences</h3><p>Pour renforcer ses connaissances et devenir plus opérationnel.</p></a>
+<a class="card" href="#/bibliotheque"><span class="n">2</span><h3>Trouver un emploi</h3><p>Pour mieux comprendre le marché et préparer son insertion professionnelle.</p></a>
+<a class="card" href="#/bibliotheque"><span class="n">3</span><h3>Découvrir un métier</h3><p>Pour explorer des secteurs et des possibilités professionnelles.</p></a>
+<a class="card" href="#/bibliotheque"><span class="n">4</span><h3>Créer un revenu</h3><p>Pour développer des compétences utiles à de nouvelles opportunités.</p></a>
+</div></div></section>
+
+<section id="formations" style="background:var(--soft)"><div class="w">
+<p class="tag">Sélection Kberg Education</p>
+<h2>Quelques ressources pour <em>ouvrir le champ.</em></h2>
+<p class="lead">Un aperçu pensé pour vous donner un point de départ, pas pour vous enfermer dans un catalogue.</p>
+<div class="grid" id="sel"></div>
+</div></section>
+
+<section id="tremplin" hidden><div class="w split">
+<div><p class="tag">Collection Tremplin</p>
+<h2>Et si votre avenir commençait par une <em>meilleure direction ?</em></h2>
+<p class="lead">Avant de chercher une opportunité, encore faut-il savoir lesquelles existent. Tremplin aide à mieux comprendre les métiers, les secteurs et les stratégies qui peuvent ouvrir de nouvelles perspectives professionnelles.</p>
+<p style="margin-top:26px"><a class="btn" href="#/bibliotheque">Découvrir la collection</a></p></div>
+<div class="duo" id="duo" aria-hidden="true"></div>
+</div></section>
+
+<section style="padding-top:0"><div class="w">
+<p class="tag">Pour chaque étape</p>
+<h2>Kberg Education avance avec vous, <em>quelle que soit votre étape.</em></h2>
+<div class="lines" style="margin-top:36px">
+<div><span class="n">1</span><h3>Étudiants</h3><p>Développer des compétences utiles en parallèle du parcours académique.</p></div>
+<div><span class="n">2</span><h3>Jeunes diplômés</h3><p>Mieux comprendre les possibilités et préparer son entrée dans le monde professionnel.</p></div>
+<div><span class="n">3</span><h3>Chercheurs d'emploi</h3><p>Acquérir de nouveaux repères et développer des compétences concrètes.</p></div>
+<div><span class="n">4</span><h3>Professionnels</h3><p>Renforcer son profil, apprendre autrement ou préparer une évolution.</p></div>
+</div></div></section>
+
+<section style="background:var(--soft);padding-inline:0"><div class="w">
+<p class="tag">Paroles d'apprenants</p>
+<h2>Ce qui change, quand tout devient <em>plus clair.</em></h2>
+<p class="note">Exemples de témoignages — à remplacer par des retours vérifiés.</p></div>
+<div class="mq" style="margin-top:30px"><div id="m1"></div></div><div class="mq r"><div id="m2"></div></div>
+</section>
+
+<section id="bibliotheque"><div class="w">
+<p class="tag">Bientôt dans la bibliothèque</p>
+<h2>Tout un univers de ressources <em>vous attend.</em></h2>
+<p class="lead">Explorez les formats, les métiers et les compétences qui peuvent éclairer votre prochaine décision.</p>
+<div class="srch"><input id="hq" type="search" placeholder="Rechercher une compétence ou un produit" aria-label="Rechercher"><button class="pill on" data-go="">Tout</button><span id="hp" class="row"></span></div>
+<div class="grid" id="catg"></div>
+<p style="margin-top:26px"><a class="btn" href="#/bibliotheque">Explorer toute la bibliothèque</a></p>
+</div></section>
+
+<section id="support" style="background:var(--soft)"><div class="w split sup">
+<div class="ph" role="img" aria-label="Service support Kberg Education">Une vraie personne,<br>à l'autre bout du message.</div>
+<div><p class="tag">Un accompagnement humain</p>
+<h2>Une question <em>avant de choisir ?</em></h2>
+<p class="lead">Vous pouvez poser vos questions et obtenir une réponse 24 h/24 et 7 j/7 pour choisir plus sereinement votre prochaine ressource.</p>
+<p style="margin-top:26px"><a class="btn" data-wa="Bonjour Kberg Education, j'ai une question avant de choisir une ressource." href="#">Parler à Kberg Education sur WhatsApp</a></p></div>
+</div></section>
+
+<section id="faq"><div class="w" style="max-width:820px">
+<p class="tag">Questions fréquentes</p>
+<h2>Des réponses <em>sans détour.</em></h2>
+<div style="margin-top:34px">
+<details><summary>Comment fonctionne Kberg Education ?</summary><p>Kberg Education propose des ebooks et formations numériques sur l'emploi, l'orientation et les compétences. Vous parcourez la bibliothèque, choisissez une ressource et la recevez après commande.</p></details>
+<details><summary>À qui s'adressent les ressources ?</summary><p>Aux étudiants, jeunes diplômés, chercheurs d'emploi et professionnels qui veulent développer des compétences utiles ou mieux s'orienter.</p></details>
+<details><summary>Où puis-je voir toutes les ressources ?</summary><p>Dans la bibliothèque : ouvrez la page Ressources du menu. Vous pouvez filtrer par catégorie ou chercher par mot-clé.</p></details>
+<details><summary>Comment acheter une formation ou une ressource ?</summary><p>Cliquez sur « Commander » sous la ressource choisie : vous arrivez sur notre boutique sécurisée pour finaliser votre achat. Notre équipe reste disponible sur WhatsApp si vous avez besoin d'aide.</p></details>
+<details><summary>Je ne sais pas quelle ressource choisir.</summary><p>Écrivez-nous sur WhatsApp en expliquant votre situation et votre objectif. Nous vous orientons vers la ressource la plus adaptée.</p></details>
+</div></div></section>
+
+<section class="cta"><div class="w">
+<p class="tag">Le premier pas vous appartient</p>
+<h2>Votre prochaine étape <em>commence ici.</em></h2>
+<p>Une nouvelle compétence peut changer une trajectoire.<br>Une meilleure direction peut changer la suite.</p>
+<div class="row"><a class="btn" href="#/bibliotheque">Découvrir nos ressources et formations</a><a class="btn o" data-wa="Bonjour Kberg Education, je voudrais en savoir plus." href="#">Parler à Kberg Education</a></div>
+</div></section>
+</main>
+
+<main class="lib" id="lib"><div class="w">
+<p class="tag">Bibliothèque</p>
+<h2>Toutes les <em>ressources</em></h2>
+<div class="srch"><input id="q" type="search" placeholder="Rechercher une compétence ou un produit" aria-label="Rechercher"><span id="pills" class="row"></span></div>
+<div class="grid" id="all"></div>
+<p id="none" class="note" hidden>Aucune ressource ne correspond. Essayez un autre mot ou écrivez-nous sur WhatsApp.</p>
+</div></main>
+
+<footer><div class="w">
+<div><a class="logo" href="#accueil"><i>K</i>Kberg Education</a><p style="color:var(--mute);margin-top:8px">Votre avenir mérite de meilleures clés.</p></div>
+<ul><li><a href="#accueil">Accueil</a></li><li><a href="#formations">Formations</a></li><li><a href="#/bibliotheque">Ressources</a></li><li><a href="#support">Support</a></li><li><a href="#faq">FAQ</a></li><li><a data-wa="Bonjour Kberg Education" href="#">Ouvrir la messagerie</a></li></ul>
+<small>© 2026 Kberg Education. Mentions légales et politiques à venir.</small>
+</div></footer>
+<a class="wa" data-wa="Bonjour Kberg Education" href="#" aria-label="Écrire sur WhatsApp">✆</a>
+
+<script>
+// ===== À MODIFIER =====
+// (les produits ne se modifient plus ici : ils viennent de la boutique)
+const WA="22872915346";            // numéro WhatsApp, format international sans +
+const STORE="https://flxxmtvc.mychariow.store"; // boutique : boutons Commander et liens des produits
+const LEARNERS=250, REVIEWS=48, TOTAL=50; // compteurs
+let P=[];
+const T=[["Amina Lawson","Le contenu m'a aidée à relier mes acquis à des situations professionnelles concrètes."],["Koffi Mensah","J'ai enfin trouvé un point de départ clair pour organiser mon apprentissage."],["Nadia Akakpo","Les explications m'ont permis de mieux comprendre les compétences à renforcer."],["Yannick Dossou","J'ai pu avancer étape par étape sans me sentir dépassé par les notions."],["Grâce Amouzou","Cette ressource m'a donné une vision plus structurée de mon projet professionnel."],["Kevin Houngbo","J'ai apprécié l'approche accessible et directement reliée aux réalités du travail."],["Mireille Agbo","Le parcours m'a aidée à identifier des pistes que je n'avais pas envisagées."],["Samuel Tchalla","Les exemples m'ont permis de mieux situer mon niveau et mes prochaines étapes."],["Estelle Adjei","Je comprends maintenant comment transformer mes connaissances en actions utiles."],["David Soglo","Le contenu est clair et m'a aidé à gagner en méthode dans ma progression."],["Ruth Kpatcha","J'ai pu clarifier mon objectif avant de choisir la compétence à approfondir."],["Junior Afi","Cette approche m'a appris à mieux organiser mes priorités professionnelles."]];
+// ======================
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const wa=m=>"https://wa.me/"+WA+"?text="+encodeURIComponent(m);
+$$("[data-wa]").forEach(a=>{a.href=wa(a.dataset.wa);a.target="_blank";a.rel="noopener"});
+$("#tk").innerHTML=("<span>Compétences</span><span>Emploi</span><span>IA</span><span>Cybersécurité</span><span>Business</span><span>Orientation</span>").repeat(8);
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const link=p=>p.slug?STORE+"/"+encodeURIComponent(p.slug):STORE;
+const card=(p,i,full)=>`<article class="card res"><div class="cover" style="--g:linear-gradient(150deg,${GR[i%GR.length]})">${p.img?`<img src="${esc(p.img)}" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">`:esc(p.t)}${p.price?`<small>${esc(p.price)}</small>`:""}</div><div><h3>${esc(p.t)}</h3><p>${esc(p.d)}</p><a class="btn${full?"":" o"}" href="${esc(link(p))}">${full?"Commander":"Découvrir"}</a></div></article>`;
+const tc=([n,q])=>`<div class="t"><header><span class="av">${n.split(" ").map(x=>x[0]).join("")}</span>${n}</header><p>${q}</p><small>Exemple fictif</small></div>`;
+$("#m1").innerHTML=T.slice(0,6).concat(T.slice(0,6)).map(tc).join("");
+$("#m2").innerHTML=T.slice(6).concat(T.slice(6)).map(tc).join("");
+// bibliothèque
+let cat="",cats=[""];
+function draw(){const q=$("#q").value.toLowerCase().trim();
+ $("#pills").innerHTML=cats.map(c=>`<button class="pill${c==cat?" on":""}" data-c="${c}">${c||"Tout"}</button>`).join("");
+ const r=P.filter(p=>(!cat||p.c==cat)&&(p.t+p.d).toLowerCase().includes(q));
+ $("#all").innerHTML=r.map(p=>card(p,0,1)).join("");const nn=$("#none");nn.textContent=!loaded?"Chargement des ressources…":!P.length?"Les ressources arrivent bientôt. Revenez très vite !":"Aucune ressource ne correspond. Essayez un autre mot ou écrivez-nous sur WhatsApp.";nn.hidden=r.length>0}
+$("#pills").onclick=e=>{if(e.target.dataset.c!==undefined){cat=e.target.dataset.c;draw()}};
+$("#q").oninput=draw;
+function go(c,q){cat=c||"";$("#q").value=q||"";draw();location.hash="#/bibliotheque"}
+$$("[data-go]").forEach(b=>b.onclick=()=>go(b.dataset.go,$("#hq").value));
+$("#hq").onkeydown=e=>{if(e.key=="Enter")go("",e.target.value)};
+
+let loaded=false;
+const GR=["#14574a,#0b3a31","#b9791c,#6e430b","#1d3b6b,#0d1f3d","#3a5a2a,#1b2f12","#8a2f4a,#4a1226","#2f6f7a,#12363d"];
+function paint(){
+ cats=[""].concat([...new Set(P.map(p=>p.c))]);const cs=cats.slice(1);
+ $("#sel").innerHTML=P.slice(0,6).map((p,i)=>card(p,i,0)).join("")||'<p class="note">Les ressources arrivent bientôt.</p>';
+ $("#catg").innerHTML=cs.map(c=>`<a class="card" href="#/bibliotheque" data-cat="${esc(c)}"><h3>${esc(c)}</h3><p>${P.filter(p=>p.c==c).length} ressource(s)</p></a>`).join("");
+ $("#hp").innerHTML=cs.slice(0,4).map(c=>`<button class="pill" data-go="${esc(c)}">${esc(c)}</button>`).join("");
+}
+$("#hp").onclick=e=>{if(e.target.dataset.go!==undefined)go(e.target.dataset.go,$("#hq").value)};
+$("#catg").onclick=e=>{const a=e.target.closest("[data-cat]");if(a){e.preventDefault();go(a.dataset.cat)}};
+// Produits : toujours lus depuis la boutique via /api/products
+fetch("/api/products").then(r=>r.json()).then(d=>{P=d.products||[]}).catch(()=>{P=[]}).then(()=>{loaded=true;paint();draw()});
+// routage
+function route(){const h=location.hash,isLib=h.startsWith("#/bibliotheque");document.body.classList.toggle("islib",isLib);$("#menu").classList.remove("open");
+ if(isLib){window.scrollTo(0,0)}else if(h.length>1){const el=document.getElementById(h.slice(1));setTimeout(()=>el&&el.scrollIntoView(),30)}else window.scrollTo(0,0)}
+addEventListener("hashchange",route);route();draw();
+$("#bg").onclick=()=>$("#menu").classList.toggle("open");
+// compteurs
+const eio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;eio.unobserve(e.target);
+ const el=e.target,to=eval(el.dataset.to),of=el.dataset.of?eval(el.dataset.of):0,t0=performance.now();
+ (function f(t){const k=Math.min(1,(t-t0)/1400),v=Math.round(to*k);el.textContent=of?v+" / "+of:v;if(k<1)requestAnimationFrame(f)})(t0)}),{threshold:.5});
+$$("[data-to]").forEach(el=>eio.observe(el));
+</script>
+</body>
+</html>
